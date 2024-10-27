@@ -93,7 +93,34 @@ section p {
     margin-top: 10px;
 }
 
-/* Footer / Contact Section */
+/* Contact Section */
+#contact {
+    position: relative;
+    padding: 60px 20px;
+    background-image: url('contact-background.webp'); /* Path to Contact Background Image */
+    background-size: cover;
+    background-position: center;
+    color: #FAFAFA; /* Light text color for readability */
+    text-align: center;
+}
+
+#contact::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay with shadow effect */
+    z-index: 1;
+}
+
+#contact h2, #contact p {
+    position: relative;
+    z-index: 2; /* Ensures text appears above the overlay */
+}
+
+/* Footer Section */
 footer {
     background-color: #4A4A4A; /* Primary Color */
     padding: 30px 20px;
