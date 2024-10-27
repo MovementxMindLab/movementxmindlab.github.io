@@ -9,44 +9,48 @@ body {
     font-family: 'Verdana', sans-serif;
     color: #4A4A4A;
     background-color: #FAFAFA;
+    display: flex;
 }
 
 /* Sidebar Navigation */
-nav {
-    position: fixed;
+.sidebar {
     width: 200px;
     height: 100vh;
     background-color: #A5C4C9;
     padding-top: 20px;
+    position: fixed;
     left: 0;
     top: 0;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-nav ul {
+.sidebar ul {
     list-style-type: none;
     padding: 0;
 }
 
-nav ul li {
+.sidebar ul li {
     margin: 15px 0;
 }
 
-nav ul li a {
+.sidebar ul li a {
     color: #FAFAFA;
     text-decoration: none;
     font-weight: bold;
     font-size: 1.1em;
 }
 
-nav ul li a:hover {
+.sidebar ul li a:hover {
     color: #F5B5A4;
 }
 
 /* Main Content Area */
-body {
+main {
     margin-left: 220px;
     padding: 20px;
+    width: calc(100% - 220px);
 }
 
 /* Header Section */
