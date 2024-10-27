@@ -26,99 +26,50 @@ nav {
     text-align: center;
 }
 
-nav ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-nav ul li {
-    margin: 20px 0;
-}
-
 nav ul li a {
     color: #4A4A4A;
-    text-decoration: none;
     font-weight: bold;
-    font-size: 1.1em;
 }
 
-nav ul li a:hover {
-    color: #F5B5A4;
-}
-
-/* Main Content Wrapper */
 main {
     margin-left: 200px;
     padding: 20px;
-    max-width: calc(100% - 200px);
 }
 
-/* About Me Section Layout */
-.about-content {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    background-color: #A5C4C9; /* Soft Background Color */
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-.profile-picture {
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 8px; /* Square shape */
-    border: 3px solid #F5B5A4;
-}
-
-.about-text {
-    max-width: 600px;
-    color: #4A4A4A;
-}
-
-/* Education Section */
-#education {
-    margin-top: 20px;
-    padding: 20px;
-    background-color: #FFFFFF;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-.education-entry {
-    margin-bottom: 20px;
-}
-
-.education-entry h4 {
-    color: #4A4A4A;
-    margin-bottom: 5px;
-}
-
-/* Footer / Contact Section */
-#contact {
+/* Header Section with Image */
+header {
     position: relative;
     padding: 60px 20px;
-    background-image: url('contact-background.webp');
+    background-image: url('header-background.webp');
     background-size: cover;
     background-position: center;
     color: #FAFAFA;
     text-align: center;
-    margin-top: 20px;
 }
 
-#contact::before {
+header::before {
     content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
     background-color: rgba(0, 0, 0, 0.5);
-    z-index: 1;
 }
 
-#contact h2, #contact p {
+/* About Me Section */
+.about-content {
+    display: flex;
+}
+
+.profile-picture {
+    width: 250px;
+    height: 250px;
+    border-radius: 0;
+    object-fit: cover;
+    border: 5px solid #F5B5A4;
+}
+
+footer {
     position: relative;
-    z-index: 2;
+    padding: 60px 20px;
+    background-image: url('contact-background.webp');
+    background-size: cover;
+    text-align: center;
+    color: #FAFAFA;
 }
