@@ -8,114 +8,46 @@
 body {
     font-family: 'Verdana', sans-serif;
     color: #4A4A4A;
-    display: flex;
     background-color: #FAFAFA;
-}
-
-/* Sidebar Navigation */
-.sidebar {
-    width: 200px;
-    height: 100vh;
-    background-color: #A5C4C9;
-    padding-top: 20px;
-    position: fixed;
-    left: 0;
-    top: 0;
-}
-
-.sidebar ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.sidebar ul li {
-    margin: 15px 0;
-    text-align: center;
-}
-
-.sidebar ul li a {
-    color: #FAFAFA;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1.1em;
-}
-
-.sidebar ul li a:hover {
-    color: #F5B5A4;
-}
-
-/* Main Content Wrapper */
-.content-wrapper {
-    margin-left: 220px;
-    padding: 20px;
-    width: calc(100% - 220px);
 }
 
 /* Header Section */
 header {
-    height: 300px;
-    background-image: url('header-background.webp');
-    background-size: cover;
-    background-position: center;
     position: relative;
     text-align: center;
-    color: #FAFAFA;
-}
-
-.header-overlay {
-    background-color: rgba(0, 0, 0, 0.5);
     padding: 60px 20px;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-header h1 {
-    font-size: 2.5em;
+    background-size: cover;
+    background-position: center;
     color: #FAFAFA;
 }
 
-header p {
-    font-size: 1.2em;
-    color: #FAFAFA;
+header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1;
 }
 
-/* About Me Section */
-#about {
-    background-color: #E8F0F2;
-    padding: 60px 20px;
-    margin: 20px 0;
-    border-radius: 8px;
-    text-align: center;
-}
-
-.about-content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.profile-pic {
+/* Profile Picture in About Section */
+.profile img {
     width: 150px;
     height: 150px;
     border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
 }
 
-/* Footer / Contact Section */
+/* Contact Section */
 footer#contact {
     position: relative;
     padding: 60px 20px;
-    background-image: url('contact-background.webp');
     background-size: cover;
     background-position: center;
     color: #FAFAFA;
     text-align: center;
-    border-top: 5px solid #F5B5A4;
 }
 
 footer#contact::before {
@@ -132,15 +64,4 @@ footer#contact::before {
 footer#contact h2, footer#contact p {
     position: relative;
     z-index: 2;
-    font-size: 1.5em;
-}
-
-footer#contact a {
-    color: #F5B5A4;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-footer#contact a:hover {
-    text-decoration: underline;
 }
