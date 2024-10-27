@@ -1,0 +1,99 @@
+/* Basic Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif; /* You can replace this with another font if you prefer */
+    color: #4a4a4a; /* Primary text color */
+    background-color: #fafafa; /* Background color */
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #a5c4c9; /* Secondary color */
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #4a4a4a;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #f5b5a4; /* Accent color on hover */
+}
+
+/* Header Section */
+header {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #fafafa;
+}
+
+header h1 {
+    color: #4a4a4a;
+    font-size: 2.5em;
+}
+
+header p {
+    color: #a5c4c9; /* Secondary color */
+    font-size: 1.2em;
+}
+
+/* Section Styling */
+section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+section h2 {
+    color: #4a4a4a;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+section p {
+    color: #4a4a4a;
+    font-size: 1em;
+    margin: 10px 0;
+}
+
+/* Footer / Contact Section */
+footer {
+    background-color: #a5c4c9; /* Secondary color */
+    padding: 20px;
+    text-align: center;
+}
+
+footer h2 {
+    color: #4a4a4a;
+    font-size: 1.5em;
+}
+
+footer p {
+    color: #4a4a4a;
+    font-size: 1em;
+}
+
+footer a {
+    color: #f5b5a4; /* Accent color */
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
