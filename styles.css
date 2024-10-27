@@ -41,7 +41,7 @@ nav ul li a:hover {
 header {
     text-align: center;
     padding: 60px 20px;
-    background-image: url('header-background.webp'); /* Updated file name */
+    background-image: url('header-background.webp'); /* Path is correct based on the root directory */
     background-size: cover;
     background-position: center;
     color: #FAFAFA; /* Light Gray Text */
