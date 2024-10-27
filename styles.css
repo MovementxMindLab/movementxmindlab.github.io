@@ -12,101 +12,92 @@ body {
     line-height: 1.6;
 }
 
-/* Navigation Sidebar */
+/* Navigation Bar */
 nav {
-    background-color: #A5C4C9; /* Secondary Color */
-    padding: 20px;
-    text-align: left;
     position: fixed;
-    width: 200px;
-    height: 100%;
     top: 0;
     left: 0;
+    width: 200px;
+    height: 100vh;
+    background-color: #A5C4C9; /* Sidebar Background */
+    padding-top: 20px;
 }
 
 nav ul {
     list-style-type: none;
-    padding: 0;
-}
-
-nav ul li {
-    margin: 15px 0;
+    padding-left: 20px;
 }
 
 nav ul li a {
-    color: #FAFAFA; /* Light Gray */
+    color: #FAFAFA; /* Sidebar Text Color */
     text-decoration: none;
     font-weight: bold;
-    font-size: 1.1em;
+    display: block;
+    padding: 10px 0;
 }
 
-nav ul li a:hover {
-    color: #F5B5A4; /* Accent Color on Hover */
-}
-
-/* Header Section with Background Image */
-header {
-    position: relative;
-    text-align: center;
-    padding: 100px 20px;
+/* Welcome Section */
+header#welcome {
     background-image: url('header-background.webp');
     background-size: cover;
     background-position: center;
-    color: #FAFAFA; /* Light text color for readability */
+    color: #FAFAFA;
+    text-align: center;
+    padding: 100px 20px;
+    position: relative;
 }
 
-header::before {
+header#welcome::before {
     content: "";
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    background-color: rgba(0, 0, 0, 0.4); /* Dark overlay */
     z-index: 1;
 }
 
-header h1, header p {
+.header-content {
     position: relative;
     z-index: 2;
 }
 
-/* About Me and Education Sections */
-section#about-me {
+header h1 {
+    font-size: 2.8em;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+/* Main Content Sections */
+.content-section {
     padding: 50px 20px;
-    background-color: #A5C4C9; /* Background for About Me */
     text-align: center;
-}
-
-.about-content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.about-content img {
-    width: 150px;
-    height: auto;
-    margin-right: 20px;
-}
-
-section#education {
-    padding: 50px 20px;
-    background-color: #DDEEF3;
+    margin: 20px auto;
+    max-width: 800px;
+    background-color: #FFFFFF; /* Section Background */
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    text-align: center;
 }
 
-/* Contact Section with Background Image */
+.content-section h2 {
+    color: #4A4A4A;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+/* Footer / Contact Section */
 footer#contact {
-    position: relative;
     padding: 60px 20px;
     background-image: url('contact-background.webp');
     background-size: cover;
     background-position: center;
-    color: #FAFAFA; /* Light text color for readability */
+    color: #FAFAFA;
     text-align: center;
+    border-top: 5px solid #F5B5A4;
+    position: relative;
 }
 
 footer#contact::before {
@@ -120,75 +111,16 @@ footer#contact::before {
     z-index: 1;
 }
 
-footer#contact h2, footer#contact p {
+footer h2, footer p {
     position: relative;
     z-index: 2;
 }
 
-footer#contact a {
-    color: #F5B5A4; /* Accent Color */
+footer p a {
+    color: #F5B5A4;
     text-decoration: none;
-    font-weight: bold;
 }
 
-footer#contact a:hover {
+footer p a:hover {
     text-decoration: underline;
 }
-
-/* Featured Topics, Recent Posts on Home Page */
-section#featured-topics, section#recent-posts {
-    padding: 50px 20px;
-    background-color: #F5B5A4; /* Accent Color */
-    border-radius: 8px;
-    text-align: center;
-    margin: 20px 0;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-/* Section Headings */
-h2, h3 {
-    color: #4A4A4A;
-    font-size: 2.2em;
-    margin-bottom: 20px;
-}
-
-/* General Paragraph Styling */
-p {
-    font-size: 1.1em;
-    color: #4A4A4A;
-    margin-top: 10px;
-}
-
-/* About Page Specific Styling */
-section#about-me, .education-entry {
-    background-color: #DDEEF3;
-    padding: 20px;
-    margin: 20px auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-.education-entry h4 {
-    font-size: 1.6em;
-    color: #4A4A4A;
-    margin-top: 10px;
-}
-
-.education-entry p {
-    color: #4A4A4A;
-    font-size: 1em;
-    margin: 5px 0;
-}
-
-/* Media Query for Smaller Screens */
-@media (max-width: 768px) {
-    .about-content {
-        flex-direction: column;
-    }
-    nav {
-        position: relative;
-        width: 100%;
-        height: auto;
-    }
-}
-
