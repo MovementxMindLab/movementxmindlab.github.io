@@ -1,25 +1,26 @@
-/* Basic Reset */
+/* Reset and Basic Styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body and Fonts */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Verdana', sans-serif;
     color: #4A4A4A;
-    background-color: #FAFAFA;
     display: flex;
+    background-color: #FAFAFA;
 }
 
 /* Sidebar Navigation */
 .sidebar {
     width: 200px;
+    height: 100vh;
     background-color: #A5C4C9;
     padding-top: 20px;
     position: fixed;
-    height: 100%;
+    left: 0;
+    top: 0;
 }
 
 .sidebar ul {
@@ -27,87 +28,87 @@ body {
     padding: 0;
 }
 
+.sidebar ul li {
+    margin: 15px 0;
+    text-align: center;
+}
+
 .sidebar ul li a {
-    display: block;
     color: #FAFAFA;
     text-decoration: none;
-    padding: 15px;
     font-weight: bold;
+    font-size: 1.1em;
 }
 
 .sidebar ul li a:hover {
-    background-color: #F5B5A4;
+    color: #F5B5A4;
+}
+
+/* Main Content Wrapper */
+.content-wrapper {
+    margin-left: 220px;
+    padding: 20px;
+    width: calc(100% - 220px);
 }
 
 /* Header Section */
-.header-section {
-    margin-left: 200px;
-    width: calc(100% - 200px);
-    text-align: center;
-    padding: 60px 20px;
+header {
     background-image: url('header-background.webp');
     background-size: cover;
+    background-position: center;
     color: #FAFAFA;
-    position: relative;
+    text-align: center;
+    padding: 60px 20px;
 }
 
-.header-section::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+.header-overlay {
     background-color: rgba(0, 0, 0, 0.5);
+    padding: 60px;
 }
 
-.header-section h1, .header-section p {
-    position: relative;
-    z-index: 1;
+header h1 {
+    font-size: 2.5em;
+    color: #FAFAFA;
 }
 
-/* Main Content */
-main {
-    margin-left: 200px;
-    padding: 20px;
-    display: flex;
-    justify-content: space-around;
-    gap: 20px;
-    margin-top: 20px;
+header p {
+    font-size: 1.2em;
+    color: #FAFAFA;
 }
 
-.content-box {
+.section-divider {
+    margin: 20px auto;
+    height: 3px;
+    background-color: #A5C4C9;
+    width: 80%;
+}
+
+/* Highlighted Topic and Recent Posts */
+.highlighted-topic, .recent-posts {
     background-color: #FFFFFF;
+    padding: 30px;
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    width: 45%;
+    margin: 20px 0;
+    text-align: center;
+}
+
+/* Profile Section */
+.profile-section {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.profile-pic {
+    width: 150px;
+    border-radius: 8px;
+}
+
+/* Education Section */
+.education-section {
+    background-color: #E8F0F2;
     padding: 20px;
-    text-align: center;
-}
-
-/* Footer / Contact Section */
-.footer-section {
-    margin-left: 200px;
-    padding: 40px;
-    background-image: url('contact-background.webp');
-    background-size: cover;
-    color: #FAFAFA;
-    text-align: center;
-    position: relative;
-}
-
-.footer-section::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 0;
-}
-
-.footer-section h2, .footer-section p {
-    position: relative;
-    z-index: 1;
+    border-radius: 8px;
+    margin-top: 20px;
 }
