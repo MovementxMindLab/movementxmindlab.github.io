@@ -7,14 +7,14 @@
 
 body {
     font-family: 'Verdana', sans-serif;
-    color: #33334d; /* Deep Slate Blue - Primary Text color */
-    background-color: #f8f7f3; /* Warm Light Beige - Background */
+    color: #4A4A4A; /* Primary Text Color */
+    background-color: #FAFAFA; /* Background Color */
     line-height: 1.6;
 }
 
 /* Navigation Bar */
 nav {
-    background-color: #6e7c7d; /* Muted Teal - Secondary Color */
+    background-color: #A5C4C9; /* Secondary Color */
     padding: 15px 0;
     text-align: center;
 }
@@ -27,23 +27,23 @@ nav ul {
 }
 
 nav ul li a {
-    color: #f8f7f3;
+    color: #FAFAFA; /* Light Gray */
     text-decoration: none;
     font-weight: bold;
     font-size: 1.1em;
 }
 
 nav ul li a:hover {
-    color: #f29d7e; /* Soft Salmon - Accent Color on hover */
+    color: #F5B5A4; /* Accent Color on Hover */
 }
 
 /* Header Section */
 header {
     text-align: center;
     padding: 60px 20px;
-    background-color: #f29d7e; /* Soft Salmon for warmth */
-    color: #f8f7f3;
-    border-bottom: 5px solid #6e7c7d; /* Adds a bottom border to header */
+    background-color: #F5B5A4; /* Accent Color */
+    color: #FAFAFA; /* Light Gray Text */
+    border-bottom: 5px solid #A5C4C9; /* Bottom Border */
 }
 
 header h1 {
@@ -60,32 +60,32 @@ section {
     padding: 50px 20px;
     text-align: center;
     margin: 20px 0;
-    background-color: #ffffff; /* Keeps sections distinct from background */
+    background-color: #FFFFFF; /* White for Distinction */
     border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Increased shadow for depth */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     max-width: 800px;
     margin: 20px auto;
 }
 
 section h2 {
-    color: #33334d;
+    color: #4A4A4A; /* Primary Color */
     font-size: 2.2em;
     margin-bottom: 10px;
 }
 
 section p {
-    color: #6e7c7d;
+    color: #4A4A4A;
     font-size: 1.1em;
     margin-top: 10px;
 }
 
 /* Footer / Contact Section */
 footer {
-    background-color: #33334d;
+    background-color: #4A4A4A; /* Primary Color */
     padding: 30px 20px;
-    color: #f8f7f3;
+    color: #FAFAFA; /* Light Gray */
     text-align: center;
-    border-top: 5px solid #f29d7e; /* Soft Salmon accent line at top */
+    border-top: 5px solid #F5B5A4; /* Accent Border */
 }
 
 footer h2 {
@@ -98,7 +98,7 @@ footer p {
 }
 
 footer a {
-    color: #f29d7e; /* Soft Salmon accent in footer links */
+    color: #F5B5A4; /* Accent Color */
     text-decoration: none;
     font-weight: bold;
 }
