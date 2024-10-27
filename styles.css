@@ -1,4 +1,4 @@
-/* Reset and Basic Body Styles */
+/* Basic Reset and Body Styles */
 * {
     margin: 0;
     padding: 0;
@@ -105,59 +105,53 @@ section {
     max-width: 800px; /* Limits width of sections */
 }
 
-/* Contact Section */
-#contact {
-    position: relative;
-    padding: 60px 20px;
-    background-image: url('contact-background.webp'); /* Path to Contact Background Image */
-    background-size: cover;
-    background-position: center;
-    color: #FAFAFA; /* Light text color for readability */
-    text-align: center;
-}
-
-#contact::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay with shadow effect */
-    z-index: 1;
-}
-
-#contact h2, #contact p {
-    position: relative;
-    z-index: 2; /* Ensures text appears above the overlay */
-}
-
-/* Footer */
-footer {
-    background-color: #4A4A4A; /* Primary Color */
-    padding: 30px 20px;
-    color: #FAFAFA; /* Light Gray */
-    text-align: center;
-    border-top: 5px solid #F5B5A4; /* Accent Border */
+/* About Me Section (For about.html) */
+#about {
+    text-align: left;
     max-width: 800px;
-    margin: 20px auto; /* Centers footer */
+    margin: 0 auto;
 }
 
-footer h2 {
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.profile-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-text p {
+    font-size: 1.2em;
+    color: #4A4A4A;
+}
+
+#education {
+    margin-top: 40px;
+}
+
+#education h3 {
     font-size: 1.6em;
-    margin-bottom: 10px;
+    color: #4A4A4A;
+    margin-bottom: 20px;
 }
 
-footer p {
-    font-size: 1em;
+.education-entry {
+    margin-bottom: 20px;
 }
 
-footer a {
-    color: #F5B5A4; /* Accent Color */
-    text-decoration: none;
-    font-weight: bold;
+.education-entry h4 {
+    font-size: 1.3em;
+    color: #4A4A4A;
+    margin-bottom: 5px;
 }
 
-footer a:hover {
-    text-decoration: underline;
+.education-entry p {
+    margin-left: 10px;
+    color: #4A4A4A;
 }
