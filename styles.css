@@ -106,3 +106,13 @@ footer a {
 footer a:hover {
     text-decoration: underline;
 }
+
+header {
+    text-align: center;
+    padding: 60px 20px;
+    background-image: url('path/to/your/image.png'); /* Replace with your actual path */
+    background-size: cover;
+    background-position: center;
+    color: #FAFAFA; /* Light Gray Text */
+    border-bottom: 5px solid #A5C4C9; /* Bottom Border */
+}
