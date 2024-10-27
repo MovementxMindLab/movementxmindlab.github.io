@@ -7,14 +7,14 @@
 
 body {
     font-family: 'Verdana', sans-serif;
-    color: #33334d; /* Primary color */
-    background-color: #f8f7f3; /* Light beige background */
+    color: #33334d; /* Deep Slate Blue - Primary Text color */
+    background-color: #f8f7f3; /* Warm Light Beige - Background */
     line-height: 1.6;
 }
 
 /* Navigation Bar */
 nav {
-    background-color: #6e7c7d; /* Muted teal */
+    background-color: #6e7c7d; /* Muted Teal - Secondary Color */
     padding: 15px 0;
     text-align: center;
 }
@@ -34,15 +34,16 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #f29d7e; /* Soft salmon accent on hover */
+    color: #f29d7e; /* Soft Salmon - Accent Color on hover */
 }
 
 /* Header Section */
 header {
     text-align: center;
     padding: 60px 20px;
-    background-color: #f29d7e; /* Soft salmon for warmth */
+    background-color: #f29d7e; /* Soft Salmon for warmth */
     color: #f8f7f3;
+    border-bottom: 5px solid #6e7c7d; /* Adds a bottom border to header */
 }
 
 header h1 {
@@ -59,9 +60,9 @@ section {
     padding: 50px 20px;
     text-align: center;
     margin: 20px 0;
-    background-color: #ffffff;
+    background-color: #ffffff; /* Keeps sections distinct from background */
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Increased shadow for depth */
     max-width: 800px;
     margin: 20px auto;
 }
@@ -84,6 +85,7 @@ footer {
     padding: 30px 20px;
     color: #f8f7f3;
     text-align: center;
+    border-top: 5px solid #f29d7e; /* Soft Salmon accent line at top */
 }
 
 footer h2 {
@@ -96,7 +98,7 @@ footer p {
 }
 
 footer a {
-    color: #f29d7e;
+    color: #f29d7e; /* Soft Salmon accent in footer links */
     text-decoration: none;
     font-weight: bold;
 }
