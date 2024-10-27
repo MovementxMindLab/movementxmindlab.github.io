@@ -1,4 +1,4 @@
-/* Basic Reset and Body Styles */
+/* Reset and Basic Body Styles */
 * {
     margin: 0;
     padding: 0;
@@ -59,7 +59,7 @@ nav ul li a:hover {
 main {
     margin-left: 200px; /* Offset to account for sidebar width */
     padding: 20px;
-    flex-grow: 1;
+    max-width: calc(100% - 200px); /* Limits main width */
 }
 
 /* Header Section */
@@ -98,24 +98,11 @@ header p {
 section {
     padding: 50px 20px;
     text-align: center;
-    margin: 20px 0;
+    margin: 20px auto;
     background-color: #FFFFFF; /* White for Distinction */
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    max-width: 800px;
-    margin: 20px auto;
-}
-
-section h2 {
-    color: #4A4A4A; /* Primary Color */
-    font-size: 2.2em;
-    margin-bottom: 10px;
-}
-
-section p {
-    color: #4A4A4A;
-    font-size: 1.1em;
-    margin-top: 10px;
+    max-width: 800px; /* Limits width of sections */
 }
 
 /* Contact Section */
@@ -152,6 +139,8 @@ footer {
     color: #FAFAFA; /* Light Gray */
     text-align: center;
     border-top: 5px solid #F5B5A4; /* Accent Border */
+    max-width: 800px;
+    margin: 20px auto; /* Centers footer */
 }
 
 footer h2 {
