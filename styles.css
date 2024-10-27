@@ -18,11 +18,14 @@ nav {
     height: 100vh;
     background-color: #A5C4C9;
     padding-top: 20px;
+    left: 0;
+    top: 0;
+    text-align: center;
 }
 
 nav ul {
     list-style-type: none;
-    text-align: center;
+    padding: 0;
 }
 
 nav ul li {
@@ -40,57 +43,52 @@ nav ul li a:hover {
     color: #F5B5A4;
 }
 
-/* Content Area */
+/* Main Content Area */
 body {
-    margin-left: 200px;
+    margin-left: 220px;
     padding: 20px;
 }
 
 /* Header Section */
 header {
-    position: relative;
     text-align: center;
     padding: 60px 20px;
     background-size: cover;
     background-position: center;
     color: #FAFAFA;
+    border-bottom: 5px solid #A5C4C9;
 }
 
-header::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.4);
-    z-index: 1;
+header h1 {
+    font-size: 2.5em;
 }
 
-header h1, header p {
-    position: relative;
-    z-index: 2;
+header p {
+    font-size: 1.2em;
 }
 
-/* About Section */
-#about {
+/* Section Styles */
+section {
     padding: 50px 20px;
-    background-color: #A5C4C9;
+    margin: 20px 0;
+    background-color: #FFFFFF;
     border-radius: 8px;
-    max-width: 800px;
-    margin: 20px auto;
-    color: #FAFAFA;
-    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-.profile img {
-    width: 150px;
-    height: auto;
-    border-radius: 8px;
-    margin-bottom: 20px;
+#introduction {
+    background-color: #E8F0F2; /* Light Blue */
 }
 
-/* Contact Section */
+#featured-topics {
+    background-color: #F7E8E1; /* Light Peach */
+}
+
+#recent-posts {
+    background-color: #F0E8FA; /* Light Purple */
+}
+
+/* Footer / Contact Section */
 footer#contact {
     position: relative;
     padding: 60px 20px;
@@ -98,6 +96,13 @@ footer#contact {
     background-position: center;
     color: #FAFAFA;
     text-align: center;
+    margin-top: 20px;
+    border-top: 5px solid #F5B5A4;
+}
+
+footer#contact h2, footer#contact p {
+    position: relative;
+    z-index: 2;
 }
 
 footer#contact::before {
@@ -107,11 +112,6 @@ footer#contact::before {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay with shadow effect */
     z-index: 1;
-}
-
-footer#contact h2, footer#contact p {
-    position: relative;
-    z-index: 2;
 }
