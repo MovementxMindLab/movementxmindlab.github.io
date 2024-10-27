@@ -9,6 +9,7 @@ body {
     font-family: 'Verdana', sans-serif;
     color: #4A4A4A;
     display: flex;
+    background-color: #FAFAFA;
 }
 
 /* Sidebar Navigation */
@@ -52,117 +53,62 @@ body {
 
 /* Header Section */
 header {
-    text-align: center;
-    padding: 80px 20px;
+    background-image: url('header-background.webp');
     background-size: cover;
     background-position: center;
     color: #FAFAFA;
-    position: relative;
-    border-bottom: 5px solid #A5C4C9;
+    text-align: center;
+    padding: 60px 20px;
 }
 
-header::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+.header-overlay {
     background-color: rgba(0, 0, 0, 0.5);
-    z-index: 1;
-}
-
-header h1, header p {
-    position: relative;
-    z-index: 2;
+    padding: 60px;
 }
 
 header h1 {
     font-size: 2.5em;
+    color: #FAFAFA;
 }
 
 header p {
     font-size: 1.2em;
+    color: #FAFAFA;
 }
 
-/* About Me Section */
-#about {
-    background-color: #E8F0F2;
-    padding: 60px 20px;
-    margin: 20px 0;
+.section-divider {
+    margin: 20px auto;
+    height: 3px;
+    background-color: #A5C4C9;
+    width: 80%;
+}
+
+/* Highlighted Topic and Recent Posts */
+.highlighted-topic, .recent-posts {
+    background-color: #FFFFFF;
+    padding: 30px;
     border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
     text-align: center;
 }
 
-.about-content {
+/* Profile Section */
+.profile-section {
     display: flex;
     align-items: center;
-    justify-content: center;
     gap: 20px;
-    max-width: 800px;
-    margin: 0 auto;
 }
 
 .profile-pic {
     width: 150px;
-    height: 150px;
     border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-/* Section Styles */
-section {
-    padding: 50px 20px;
-    margin: 20px 0;
-    background-color: #FFFFFF;
+/* Education Section */
+.education-section {
+    background-color: #E8F0F2;
+    padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    max-width: 800px;
-    margin: 20px auto;
-    text-align: center;
-}
-
-#featured-topics {
-    background-color: #F7E8E1;
-}
-
-#recent-posts {
-    background-color: #F0E8FA;
-}
-
-/* Footer / Contact Section */
-footer#contact {
-    position: relative;
-    padding: 60px 20px;
-    background-size: cover;
-    background-position: center;
-    color: #FAFAFA;
-    text-align: center;
     margin-top: 20px;
-    border-top: 5px solid #F5B5A4;
-}
-
-footer#contact::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 1;
-}
-
-footer#contact h2, footer#contact p {
-    position: relative;
-    z-index: 2;
-}
-
-footer#contact a {
-    color: #F5B5A4;
-    text-decoration: none;
-}
-
-footer#contact a:hover {
-    text-decoration: underline;
 }
