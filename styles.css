@@ -1,4 +1,4 @@
-/* Reset and Basic Body Styles */
+/* Basic Reset and Body Styles */
 * {
     margin: 0;
     padding: 0;
@@ -10,34 +10,59 @@ body {
     color: #4A4A4A; /* Primary Text Color */
     background-color: #FAFAFA; /* Background Color */
     line-height: 1.6;
+    display: flex;
 }
 
-/* Navigation Bar */
+/* Sidebar Navigation */
 nav {
-    background-color: #A5C4C9; /* Secondary Color */
-    padding: 15px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 200px;
+    background-color: #FFFFFF; /* White background for sidebar */
+    padding-top: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Adds slight shadow */
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 nav ul {
     list-style-type: none;
-    display: flex;
-    justify-content: center;
-    gap: 30px;
+    padding: 0;
+    width: 100%;
+}
+
+nav ul li {
+    margin: 20px 0;
 }
 
 nav ul li a {
-    color: #FAFAFA; /* Light Gray */
+    color: #4A4A4A; /* Primary Text Color */
     text-decoration: none;
     font-weight: bold;
     font-size: 1.1em;
+    display: block;
+    width: 100%;
+    padding: 10px;
 }
 
 nav ul li a:hover {
-    color: #F5B5A4; /* Accent Color on Hover */
+    background-color: #F5B5A4; /* Accent color on hover */
+    color: #FFFFFF; /* White text on hover */
+    border-radius: 5px;
 }
 
-/* Header Section */   
+/* Main Content Adjustments for Sidebar */
+main {
+    margin-left: 200px; /* Offset to account for sidebar width */
+    padding: 20px;
+    flex-grow: 1;
+}
+
+/* Header Section */
 header {
     position: relative;
     text-align: center;
@@ -120,7 +145,7 @@ section p {
     z-index: 2; /* Ensures text appears above the overlay */
 }
 
-/* Footer Section */
+/* Footer */
 footer {
     background-color: #4A4A4A; /* Primary Color */
     padding: 30px 20px;
