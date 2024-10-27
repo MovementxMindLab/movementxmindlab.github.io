@@ -7,8 +7,8 @@
 
 body {
     font-family: 'Verdana', sans-serif;
-    color: #4A4A4A; /* Primary Text Color */
-    background-color: #FAFAFA; /* Background Color */
+    color: #4A4A4A;
+    background-color: #FAFAFA;
     line-height: 1.6;
     display: flex;
 }
@@ -20,19 +20,15 @@ nav {
     left: 0;
     height: 100vh;
     width: 200px;
-    background-color: #FFFFFF; /* White background for sidebar */
+    background-color: #FFFFFF;
     padding-top: 20px;
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Adds slight shadow */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 nav ul {
     list-style-type: none;
     padding: 0;
-    width: 100%;
 }
 
 nav ul li {
@@ -40,67 +36,54 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #4A4A4A; /* Primary Text Color */
+    color: #4A4A4A;
     text-decoration: none;
     font-weight: bold;
     font-size: 1.1em;
-    display: block;
-    width: 100%;
-    padding: 10px;
 }
 
 nav ul li a:hover {
-    background-color: #F5B5A4; /* Accent color on hover */
-    color: #FFFFFF; /* White text on hover */
-    border-radius: 5px;
+    color: #F5B5A4;
 }
 
-/* Main Content Adjustments for Sidebar */
+/* Main Content Wrapper */
 main {
-    margin-left: 200px; /* Offset to account for sidebar width */
+    margin-left: 200px;
     padding: 20px;
-    max-width: calc(100% - 200px); /* Limits main width */
+    max-width: calc(100% - 200px);
 }
 
-/* About Me Section */
-#about {
-    text-align: left;
-    max-width: 800px;
-    margin: 0 auto;
-    background-color: #A5C4C9; /* Soft background color */
+/* About Me Section Layout */
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: #A5C4C9; /* Soft Background Color */
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-.about-content {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
-
 .profile-picture {
-    width: 200px; /* Larger, square profile picture */
+    width: 200px;
     height: 200px;
     object-fit: cover;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px; /* Square shape */
     border: 3px solid #F5B5A4;
 }
 
-.about-text p {
-    font-size: 1.2em;
+.about-text {
+    max-width: 600px;
     color: #4A4A4A;
 }
 
 /* Education Section */
 #education {
-    margin-top: 40px;
-}
-
-#education h3 {
-    font-size: 1.6em;
-    color: #4A4A4A;
-    margin-bottom: 20px;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .education-entry {
@@ -108,5 +91,34 @@ main {
 }
 
 .education-entry h4 {
-    font-size: 1.3em;
-    color
+    color: #4A4A4A;
+    margin-bottom: 5px;
+}
+
+/* Footer / Contact Section */
+#contact {
+    position: relative;
+    padding: 60px 20px;
+    background-image: url('contact-background.webp');
+    background-size: cover;
+    background-position: center;
+    color: #FAFAFA;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#contact::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+#contact h2, #contact p {
+    position: relative;
+    z-index: 2;
+}
