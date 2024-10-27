@@ -37,11 +37,11 @@ nav ul li a:hover {
     color: #F5B5A4; /* Accent Color on Hover */
 }
 
-/* Header Section */
+/* Header Section */   
 header {
     text-align: center;
     padding: 60px 20px;
-    background-image: url('DALL·E 2024-10-27 14.30.25 - A modern, abstract image with soft, organic shapes representing creativity, mindfulness, and wellness. The color palette includes soft peach, muted bl.webp');
+    background-image: url('header-background.webp'); /* Updated file name */
     background-size: cover;
     background-position: center;
     color: #FAFAFA; /* Light Gray Text */
