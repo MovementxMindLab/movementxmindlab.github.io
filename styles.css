@@ -1,4 +1,4 @@
-/* Reset and Basic Body Styles */
+/* Reset and Basic Styles */
 * {
     margin: 0;
     padding: 0;
@@ -9,67 +9,59 @@ body {
     font-family: 'Verdana', sans-serif;
     color: #4A4A4A;
     background-color: #FAFAFA;
-    line-height: 1.6;
-    display: flex;
 }
 
-/* Sidebar Navigation */
-nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    width: 200px;
-    background-color: #FFFFFF;
-    padding-top: 20px;
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-
-nav ul li a {
-    color: #4A4A4A;
-    font-weight: bold;
-}
-
-main {
-    margin-left: 200px;
-    padding: 20px;
-}
-
-/* Header Section with Image */
+/* Header Section */
 header {
     position: relative;
+    text-align: center;
     padding: 60px 20px;
-    background-image: url('header-background.webp');
+    background-size: cover;
+    background-position: center;
+    color: #FAFAFA;
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+/* Profile Picture in About Section */
+.profile img {
+    width: 150px;
+    height: 150px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+/* Contact Section */
+footer#contact {
+    position: relative;
+    padding: 60px 20px;
     background-size: cover;
     background-position: center;
     color: #FAFAFA;
     text-align: center;
 }
 
-header::before {
+footer#contact::before {
     content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
 }
 
-/* About Me Section */
-.about-content {
-    display: flex;
-}
-
-.profile-picture {
-    width: 250px;
-    height: 250px;
-    border-radius: 0;
-    object-fit: cover;
-    border: 5px solid #F5B5A4;
-}
-
-footer {
+footer#contact h2, footer#contact p {
     position: relative;
-    padding: 60px 20px;
-    background-image: url('contact-background.webp');
-    background-size: cover;
-    text-align: center;
-    color: #FAFAFA;
+    z-index: 2;
 }
