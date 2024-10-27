@@ -1,4 +1,4 @@
-/* Reset and Basic Styles */
+/* Reset and Basic Body Styles */
 * {
     margin: 0;
     padding: 0;
@@ -7,109 +7,188 @@
 
 body {
     font-family: 'Verdana', sans-serif;
-    color: #4A4A4A;
-    display: flex;
-    background-color: #FAFAFA;
+    color: #4A4A4A; /* Primary Text Color */
+    background-color: #FAFAFA; /* Background Color */
+    line-height: 1.6;
 }
 
-/* Sidebar Navigation */
-.sidebar {
-    width: 200px;
-    height: 100vh;
-    background-color: #A5C4C9;
-    padding-top: 20px;
+/* Navigation Sidebar */
+nav {
+    background-color: #A5C4C9; /* Secondary Color */
+    padding: 20px;
+    text-align: left;
     position: fixed;
-    left: 0;
+    width: 200px;
+    height: 100%;
     top: 0;
+    left: 0;
 }
 
-.sidebar ul {
+nav ul {
     list-style-type: none;
     padding: 0;
 }
 
-.sidebar ul li {
+nav ul li {
     margin: 15px 0;
-    text-align: center;
 }
 
-.sidebar ul li a {
-    color: #FAFAFA;
+nav ul li a {
+    color: #FAFAFA; /* Light Gray */
     text-decoration: none;
     font-weight: bold;
     font-size: 1.1em;
 }
 
-.sidebar ul li a:hover {
-    color: #F5B5A4;
+nav ul li a:hover {
+    color: #F5B5A4; /* Accent Color on Hover */
 }
 
-/* Main Content Wrapper */
-.content-wrapper {
-    margin-left: 220px;
-    padding: 20px;
-    width: calc(100% - 220px);
-}
-
-/* Header Section */
+/* Header Section with Background Image */
 header {
+    position: relative;
+    text-align: center;
+    padding: 100px 20px;
     background-image: url('header-background.webp');
     background-size: cover;
     background-position: center;
-    color: #FAFAFA;
-    text-align: center;
-    padding: 60px 20px;
+    color: #FAFAFA; /* Light text color for readability */
 }
 
-.header-overlay {
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 60px;
+header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    z-index: 1;
 }
 
-header h1 {
-    font-size: 2.5em;
-    color: #FAFAFA;
+header h1, header p {
+    position: relative;
+    z-index: 2;
 }
 
-header p {
-    font-size: 1.2em;
-    color: #FAFAFA;
-}
-
-.section-divider {
-    margin: 20px auto;
-    height: 3px;
-    background-color: #A5C4C9;
-    width: 80%;
-}
-
-/* Highlighted Topic and Recent Posts */
-.highlighted-topic, .recent-posts {
-    background-color: #FFFFFF;
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    margin: 20px 0;
+/* About Me and Education Sections */
+section#about-me {
+    padding: 50px 20px;
+    background-color: #A5C4C9; /* Background for About Me */
     text-align: center;
 }
 
-/* Profile Section */
-.profile-section {
+.about-content {
     display: flex;
     align-items: center;
-    gap: 20px;
+    justify-content: center;
+}
+
+.about-content img {
+    width: 150px;
+    height: auto;
+    margin-right: 20px;
+}
+
+section#education {
+    padding: 50px 20px;
+    background-color: #DDEEF3;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Contact Section with Background Image */
+footer#contact {
+    position: relative;
+    padding: 60px 20px;
+    background-image: url('contact-background.webp');
+    background-size: cover;
+    background-position: center;
+    color: #FAFAFA; /* Light text color for readability */
+    text-align: center;
+}
+
+footer#contact::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay with shadow effect */
+    z-index: 1;
+}
+
+footer#contact h2, footer#contact p {
+    position: relative;
+    z-index: 2;
+}
+
+footer#contact a {
+    color: #F5B5A4; /* Accent Color */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer#contact a:hover {
+    text-decoration: underline;
+}
+
+/* Featured Topics, Recent Posts on Home Page */
+section#featured-topics, section#recent-posts {
+    padding: 50px 20px;
+    background-color: #F5B5A4; /* Accent Color */
+    border-radius: 8px;
+    text-align: center;
+    margin: 20px 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Section Headings */
+h2, h3 {
+    color: #4A4A4A;
+    font-size: 2.2em;
     margin-bottom: 20px;
 }
 
-.profile-pic {
-    width: 150px;
-    border-radius: 8px;
+/* General Paragraph Styling */
+p {
+    font-size: 1.1em;
+    color: #4A4A4A;
+    margin-top: 10px;
 }
 
-/* Education Section */
-.education-section {
-    background-color: #E8F0F2;
+/* About Page Specific Styling */
+section#about-me, .education-entry {
+    background-color: #DDEEF3;
     padding: 20px;
+    margin: 20px auto;
     border-radius: 8px;
-    margin-top: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
+
+.education-entry h4 {
+    font-size: 1.6em;
+    color: #4A4A4A;
+    margin-top: 10px;
+}
+
+.education-entry p {
+    color: #4A4A4A;
+    font-size: 1em;
+    margin: 5px 0;
+}
+
+/* Media Query for Smaller Screens */
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+    }
+    nav {
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+}
+
