@@ -62,54 +62,15 @@ main {
     max-width: calc(100% - 200px); /* Limits main width */
 }
 
-/* Header Section */
-header {
-    position: relative;
-    text-align: center;
-    padding: 60px 20px;
-    background-image: url('header-background.webp');
-    background-size: cover;
-    background-position: center;
-    color: #FAFAFA;
-    border-bottom: 5px solid #A5C4C9;
-}
-
-header::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.4); /* Dark overlay */
-    z-index: 1;
-}
-
-header h1, header p {
-    position: relative;
-    z-index: 2; /* Place text above overlay */
-}
-
-header p {
-    font-size: 1.2em;
-}
-
-/* Section Styles */
-section {
-    padding: 50px 20px;
-    text-align: center;
-    margin: 20px auto;
-    background-color: #FFFFFF; /* White for Distinction */
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    max-width: 800px; /* Limits width of sections */
-}
-
-/* About Me Section (For about.html) */
+/* About Me Section */
 #about {
     text-align: left;
     max-width: 800px;
     margin: 0 auto;
+    background-color: #FAFAFA;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .about-content {
@@ -124,6 +85,7 @@ section {
     border-radius: 50%;
     object-fit: cover;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border: 3px solid #A5C4C9;
 }
 
 .about-text p {
