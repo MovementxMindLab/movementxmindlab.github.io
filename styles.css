@@ -4,11 +4,11 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, sans-serif;
-    color: #4A4A4A; /* Using Davy's Gray for main text */
+    color: #4A4A4A;
 }
 
 body {
-    background-color: #FAFAFA; /* Seasalt as the page background */
+    background-color: #FAFAFA;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -18,24 +18,32 @@ body {
 .header {
     background: url('header-background.webp') no-repeat center center/cover;
     width: 100%;
-    height: 250px;
+    height: 300px;
     position: relative;
     color: #FAFAFA;
 }
 
 .header .overlay {
-    background: rgba(0, 0, 0, 0.4); /* Dark overlay for readability */
+    background: rgba(0, 0, 0, 0.4);
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 20px;
+    text-align: center;
 }
 
 .header h1 {
     font-size: 2.5rem;
     margin-bottom: 10px;
+}
+
+.header .intro-text {
+    font-size: 1.1rem;
     color: #FAFAFA;
+    max-width: 700px;
+    margin-bottom: 20px;
 }
 
 .navbar {
@@ -51,7 +59,7 @@ body {
 }
 
 .navbar a:hover {
-    color: #F5B5A4; /* Melon for hover effect */
+    color: #F5B5A4;
 }
 
 /* Card Layout for Sections */
@@ -65,36 +73,7 @@ body {
     margin: 20px 0;
 }
 
-/* About Section */
-.about-section h2 {
-    color: #A5C4C9; /* Light Blue for headings */
-    margin-bottom: 10px;
-}
-
-/* Recent Posts Section */
-.recent-posts {
-    text-align: center;
-}
-
-.post-card {
-    margin-top: 15px;
-    padding: 15px;
-    border: 1px solid #E0E0E0;
-    border-radius: 8px;
-}
-
-.post-card img {
-    width: 100%;
-    border-radius: 8px;
-    margin-bottom: 10px;
-}
-
-/* Highlighted Topics */
-.highlighted-topics h2 {
-    color: #A5C4C9;
-}
-
-/* Footer Styling */
+/* Contact Form Styling */
 .footer {
     background: url('contact-background.webp') no-repeat center center/cover;
     width: 100%;
@@ -103,24 +82,49 @@ body {
 }
 
 .footer .overlay {
-    background: rgba(0, 0, 0, 0.4); /* Dark overlay for readability */
+    background: rgba(0, 0, 0, 0.5);
     padding: 20px;
     text-align: center;
+    border-radius: 10px;
 }
 
-.footer h2 {
-    font-size: 1.8rem;
+.footer form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer label {
+    font-size: 1rem;
     color: #FAFAFA;
 }
 
-.footer a {
-    color: #F5B5A4;
-    text-decoration: none;
-    font-weight: bold;
+.footer input, .footer textarea {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #4A4A4A;
 }
 
-.footer a:hover {
-    color: #A5C4C9; /* Light Blue for hover */
+.footer input:focus, .footer textarea:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.footer button {
+    background-color: #A5C4C9;
+    color: #FAFAFA;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.footer button:hover {
+    background-color: #4A4A4A;
 }
 
 /* Responsive Design */
