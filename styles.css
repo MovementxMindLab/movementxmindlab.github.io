@@ -93,7 +93,7 @@ body {
 
 /* Contact Form Styling */
 .footer {
-    background: url('contact-background.webp') no-repeat center center/cover;
+    background: url('Contact-back-ground.webp') no-repeat center center/cover;
     width: 100%;
     padding: 30px;
     color: #FAFAFA;
@@ -104,6 +104,15 @@ body {
     padding: 20px;
     text-align: center;
     border-radius: 10px;
+}
+
+/* Contact Us Title */
+.footer h2 {
+    font-size: 2rem;
+    color: #FAFAFA; /* Bright Seasalt color */
+    font-weight: 700; /* Bold for prominence */
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5); /* Subtle shadow for contrast */
+    margin-bottom: 20px;
 }
 
 .footer form {
