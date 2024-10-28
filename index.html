@@ -12,6 +12,10 @@
     <header class="header">
         <div class="overlay">
             <h1>Movement x Mind Lab</h1>
+            <p class="intro-text">
+                Movement x Mind Lab seeks to bridge the gap between creative expression and research-based insights.
+                From childhood development to holistic living, this blog offers fresh perspectives to enrich mind and body through movement.
+            </p>
             <nav class="navbar">
                 <a href="index.html">Home</a>
                 <a href="about.html">About</a>
@@ -19,12 +23,6 @@
             </nav>
         </div>
     </header>
-
-    <!-- About the Website Section -->
-    <section class="about-section card">
-        <h2>About Movement x Mind Lab</h2>
-        <p>Movement x Mind Lab seeks to bridge the gap between creative expression and research-based insights. From childhood development to holistic living, this blog offers fresh perspectives to enrich mind and body through movement.</p>
-    </section>
 
     <!-- Recent Posts Section -->
     <section class="recent-posts card">
@@ -34,21 +32,30 @@
             <h3>Coming Soon</h3>
             <p>Stay tuned for insights and updates on our latest explorations in dance, mental health, and more.</p>
         </div>
-        <!-- Additional post cards can be added here -->
     </section>
 
     <!-- Highlighted Topics Section -->
     <section class="highlighted-topics card">
         <h2>Highlighted Topics</h2>
         <p>Explore key areas in creative expression, childhood development, and holistic living.</p>
-        <!-- Placeholder for highlighted topics -->
     </section>
 
-    <!-- Contact Section -->
+    <!-- Contact Us Section -->
     <footer class="footer">
         <div class="overlay">
             <h2>Contact Us</h2>
-            <p>Email: <a href="mailto:movementxmindlab@gmail.com">movementxmindlab@gmail.com</a></p>
+            <form action="mailto:movementxmindlab@gmail.com" method="post" enctype="text/plain">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
         </div>
     </footer>
 
